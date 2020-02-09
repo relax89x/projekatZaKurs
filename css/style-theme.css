@@ -1,0 +1,770 @@
+:root {
+    --theme1: #009933;
+    --theme2: #5353c6; 
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --theme1: #009933;
+    --theme2: #5353c6; 
+}
+.to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+}
+.to-top .anchor {
+    color: white;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: gray;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 196);
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+a:visited {
+    color: gray;
+} 
+/*SVE U VEZI NAVIGACIJE*/
+header {
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid var(--theme1);
+}
+header .logo {
+    height: 85px;
+}
+.logo p {
+    padding: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+header .nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.nav .nav-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.nav .nav-element:hover {
+    background-color: var(--theme1);
+}
+.nav-element a:hover {
+    color: white;
+}
+/*SVE U VEZI SLIDERA*/
+.slider .slider-holder {
+    overflow: hidden;
+    width: 100%;
+    margin: 0px;
+}
+.slider-holder .picture-text{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slide infinite;
+}
+.picture-text .background-picture {
+    width: 20%;
+    float: left;
+}
+@keyframes slide {
+    0% {left: 0px;}
+    20% {left: 0px;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: initial}
+}
+.picture-text .text-slider {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    margin: auto;
+    padding: 20px;
+    padding-right: 0px;
+    top: 20vw;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.text-slider h3 {
+    color: white;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 3vw;
+}
+.text-slider p {
+    text-align: left;
+    color: white;
+    width: 100%;
+    font-size: 1.5vw;
+}
+.text-slider a {
+    justify-content: flex-start;
+    height: 5vw;
+    max-width: 12vw;
+    border-radius: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+/*SVE U VEZI TOP-OFFERS*/
+.top-offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 1200px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.top-offers .top-offers-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(172, 171, 171);
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+    height: calc(100% / 3);
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.top-offers-item .offers-item-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme2);
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+/*SVE U VEZI SIGN-UP U*/
+
+/*Deo sign-upa sa tekstom*/
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+.signup-container .form-description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin: 30px 0px;
+}
+.form-description h2 {
+   width: 100%;
+   margin: 0px;
+   margin-bottom: 20px;
+}
+.form-description .description-container {
+    display: block;
+    height: 100px;
+    margin: 20px;
+    margin-top: 10px;
+}
+.description-container .widget {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: var(--theme1);
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.widget {
+    color: white;
+    font-size: 1.5em;  
+}
+.description-container h3{
+    margin: 0px;
+}
+/*Sama sign-up forma za prijavu*/
+.signup-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+.signup-background .signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+    width: 80vw;
+    height: 80vw;
+    max-width: 450px;
+    max-height: 450px;
+    min-width: 320px;
+    min-height: 320px;
+    border-radius: 50%;
+    margin: auto;
+}
+.signup-form h3 {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    
+}
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+form input {
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    color: white;
+}
+form .submit {
+    display: block;
+    margin: 10px 35px;
+    margin-bottom: 0px;
+    padding: 15px;
+    background: initial;
+    border: initial;
+    outline: initial;
+    background-color: white;
+    color: gray;
+    width: 100px;
+    border-radius: 23px;
+}
+/*ALL ABOUT TEACHERS*/
+.teachers-container-background {
+    background-color: #fafafa;
+    margin: 30px 0px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teachers-container-background h3{
+    margin-bottom: 0px; 
+}
+.teachers-container-background .teachers-container {
+    background-color: rgb(250, 250, 250);
+    display: flex; /*Ovde flex sluzi da bi h3, p i .container-child-items budu poredjan jedan ispod drugog, trebace i za kasnje*/
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+    width: 300px;
+}
+.teachers-container-background h4 {
+    margin-bottom: 0px;
+}
+.teachers-container-background p {
+    margin-bottom: 30px;
+}
+.teachers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1840px;
+}
+.teachers-container .one-teacher {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.one-teacher .teacher-picture .mark, .catherine, .jessie-ca, .andrew-berti{
+    width: 100%;
+}
+.one-teacher > h4, .teacher-skills, .content-awsome{
+    padding-left: 20px;
+}
+.one-teacher .teacher-skills {
+    margin-bottom: 15px;
+}
+.one-teacher p{
+    font-size: 12px;
+}
+.content-awsome {
+    border-top: 1px solid rgb(170, 170, 170);
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5em;
+    color: rgb(92, 92, 92);
+}
+.content-awsome a{
+    padding-right: 20px;
+}
+/*ALL ABOUT COURSES*/
+.courses-container {
+    text-align: center;
+    margin-top: 30px;
+    height: auto;
+}
+.courses-container h3 {
+    margin-bottom: 0px;
+}
+.courses-container .main-paragprah {
+    margin-bottom: 30px;
+}
+.courses-container-items {
+    display: flex;
+    justify-content: center;
+}
+.courses-container-items .one-course {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90vw;
+}
+.one-course h4{
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+.one-course p{
+    text-align: left;
+    padding-left: 20px;
+}
+.one-course .course-pictures {
+    display: flex;
+    position: relative;
+    width: 90vw;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/*Course picture + text above it*/
+.course-pictures .course-1, .course-2, .course-3, .course-4 {
+    width: 90vw;
+}
+.course-pictures .calendar-container {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+.calendar-container a, .numbers {
+    padding: 0px;
+    line-height: 40px;
+    color: white;
+}
+.calendar-container .numbers {
+    padding: 0px 5px;
+    font-size: 14px;
+}
+/*Part about teachers*/
+.select-teacher {
+    position: relative;
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.select-teacher .teacher-1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.select-teacher p{
+    line-height: 60px;
+    color: black;
+    font-weight: bold;
+}
+.select-teacher .teacher-price {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    line-height: 40px;
+    height: 40px;
+    width: 60px;
+    background-color: var(--theme2);
+    border-radius: 2px;
+    color: white;
+}
+/*ALL ABOUT STUDENT REVIEWS*/
+.reviews-container-child {
+    background-color: #fafafa;
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-container-child h3{
+    margin-bottom: 0px;
+}
+.one-student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    background-color: white;
+    margin: 15px;
+}
+/*Just student with his picture, name and ocupation*/
+.one-student .picture-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 20%;
+    height: 80px;
+}
+.picture-text .picture-1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    align-self: stretch;
+}
+.picture-text h4{
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+.picture-text .review-small-font {
+    font-size: 12px;
+    margin-left: 15px;
+    width: 100px;
+}
+/*here starts rest of the flex*/
+.one-student .student-comment {
+    margin-top: 15px;
+}
+.one-student .stars {
+    margin-top: 15px;
+    color: var(--theme2);
+}
+/*ALL ABOUT ASIDE*/
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme2);
+    width: 100%;
+    padding: 20px;
+}
+aside h3 {
+    color: white;
+    margin-bottom: 0px;
+}
+aside .footer-paragraph {
+    color: white;
+    margin-bottom: 30px;
+}
+/*part about the form in aside*/
+aside .whole-form {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    margin: auto;
+}
+.whole-form form {
+    height: auto;
+}
+form .text-form {
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+form .email-form {
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+form textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+form .submit-form {
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    color: gray;
+}
+/*aside picture only css*/
+aside .aside-picture {
+    display: flex;
+    justify-content: center;
+}
+.aside-picture img {
+    width: 90vw;
+    max-width: 600px;
+}
+/*ALL ABOUT FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+footer .footer-element {
+    padding: 10px;
+    width: 70vw;
+}
+.footer-element h4 {
+    margin-bottom: 10px;
+}
+/*about font awsome links*/
+.links-social {
+    display: flex;
+    height: 30px;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.links-social a {
+    color: var(--theme1);
+}
+/*about quick links*/
+.links-proffesion {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    margin-top: 15px;
+}
+.links-proffesion a{
+    width: 25%;
+    font-size: 14px;
+}
+/*about form inside the footer*/
+.form-footer .email-footer {
+    margin: 20px 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.form-footer .submit {
+    margin: 10px 0px;
+    background-color: rgb(41, 41, 41);
+    border: 1px solid white;
+    width: 140px;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --theme1: #ffff00;
+        --theme2: #ff0066; 
+    }
+    /*HEADER AT MIN 768*/
+    header {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    header .nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .nav .nav-element {
+        width: 100%;
+        height: 85px;
+        line-height: 85px;
+    }
+    .nav a {
+        width: 100%;
+        height: 85px;
+        line-height: 85px;
+    }
+    /*TOP-OFFERS AT MIN 768*/
+    .top-offers {
+        flex-direction: row;
+        width: 90vw;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 5vw;
+        padding-top: 30px;
+    }
+    .top-offers .top-offers-item{
+        width: 30vw;
+        padding: 100px 20px;
+        height: 400px;
+    }
+    /*WHOLE FORM AT MIN 768*/
+    /*form part with text*/
+    .signup-container .form-description {
+        align-items: flex-start;
+    }
+    .form-description .description-container {
+        font-size: 1.5vw;
+        width: 60vw;
+    }
+    /*just the form*/
+    .signup-container .signup-form {
+        margin-left: 0px;
+        font-size: 2vw;
+    }
+    /*TEACHERS AT MIN 768*/
+    .teachers-container-background .teachers-container {
+        flex-direction: row;
+        width: 730px;
+        height: auto;
+        margin: 0px;
+        background-color: #fafafa;
+    }
+    .teachers-container .one-teacher {
+        width: 350px;
+        margin-top: 30px;
+    }
+     /*COURSES AT MIN 768*/
+     .courses-container-items .one-course {
+         background-color: #fafafa;
+     }
+     /*ASIDE AT MIN 768*/
+     .aside-picture img{
+         max-width: 992px;
+     }
+     /*FOOTER AT MIN 768*/
+     footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 50px;
+     }
+     footer .footer-element {
+        margin-right: 0px;
+        width: 50%;
+        margin-right: 0px;
+     }
+     .links-proffesion a{
+        width: 25%;
+    }
+}
+@media screen and (min-width: 992px) {
+    header {
+        width: 80vw;
+        margin: auto;
+    }
+    .top-offers {
+        width: 80vw;
+        margin: auto;
+    }
+    .top-offers .top-offers-item {
+        margin: 0px;
+        margin-right: 20px;
+    }
+     #last-margin {
+        margin-right: 0px;
+    }
+    /*SIGNUP AT 992px*/
+    .signup-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80vw;
+        margin: auto;
+        padding: 0px;
+    }
+    .signup-form .form-description {
+        display: flex;
+        width: 50%;
+    }
+    .description-container{
+        width: 30vw !important;
+    }
+    .form-description .widget {
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+    }
+    /*TEACHER AT 992px*/
+    .teachers-container {
+        width: 80vw !important;
+    }
+    .teachers-container .one-teacher{
+        width: 23%;
+    }
+    .courses-container {
+        width: 80vw;
+        margin: auto;
+    }
+    /*ASIDE AT 992px*/
+    .aside {
+        width: 70vmax;
+        margin: auto;
+    }
+}

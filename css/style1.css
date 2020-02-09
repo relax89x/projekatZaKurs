@@ -1,0 +1,236 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: gray;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 196);
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+a:visited {
+    color: gray;
+} 
+/*SVE U VEZI NAVIGACIJE*/
+header {
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid #009933;
+}
+header .logo {
+    height: 85px;
+}
+.logo p {
+    padding: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+header .nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.nav .nav-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.nav .nav-element:hover {
+    background-color:#009933;
+}
+.nav-element a:hover {
+    color: white;
+}
+/*SVE U VEZI SLIDERA*/
+.slider {
+    width: 100%;
+}
+.slider .slider-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: gray;
+    margin-bottom: 30px;
+}
+.slider-holder .text-slider {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    width: 80%;
+    height: auto;
+}
+.slider-holder .background-picture {
+    width: 769px;
+}
+.text-slider h2 {
+    color: white;
+}
+.text-slider p {
+    text-align: left;
+    color: white;
+}
+.text-slider a {
+    justify-content: flex-start;
+    height: 60px;
+    width: 160px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    margin-top: 30px;
+}
+/*SVE U VEZI TOP-OFFERS*/
+.top-offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 1200px;
+    margin-bottom: 100px;
+}
+.top-offers .top-offers-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(172, 171, 171);
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: white;
+    height: calc(100% / 3);
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.top-offers-item .offers-item-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5353c6;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+/*SVE U VEZI SIGN-UP U*/
+
+/*Deo sign-upa sa tekstom*/
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+.signup-container .form-description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin: 30px 0px;
+}
+.form-description h2 {
+   width: 100%;
+   margin: 0px;
+   margin-bottom: 20px;
+}
+.form-description .description-container {
+    display: block;
+    height: 100px;
+    margin: 20px;
+    margin-top: 10px;
+}
+.description-container .widget {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: yellow;
+    float: left;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.description-container h3{
+    margin: 0px;
+}
+/*Sama sign-up forma za prijavu*/
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 47, 47);
+    width: 100%;
+    height: 360px;
+    padding: 30px;
+}
+.signup-form h2 {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 180px;
+}
+form input {
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    color: white;
+}
+form .submit {
+    display: block;
+    margin: 10px 35px;
+    margin-bottom: 0px;
+    padding: 15px;
+    background: initial;
+    border: initial;
+    outline: initial;
+    background-color: white;
+    color: gray;
+    width: 110px;
+    border-radius: 23px;
+}
+/*SVE U VEZI TEACHERS*/
+.teacher-container {
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+}
+
+
+
+
+

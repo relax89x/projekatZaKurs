@@ -1,0 +1,84 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: gray;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 196);
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+a:visited {
+    color: gray;
+} 
+/* SAMA ANIMACIJA*/
+.slider .slider-holder {
+    overflow: hidden;
+}
+.slider-holder .picture-text{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slide infinite;
+}
+.picture-text .background-picture {
+    width: 20%;
+    float: left;
+}
+@keyframes slide {
+    0% {left: 0px;}
+    20% {left: 0px;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {display: initial}
+}
+.picture-text .text-slider {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    left: 0px;
+    margin: auto;
+    padding: 20px;
+    top: 140px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.text-slider h3 {
+    color: white;
+    margin-top: 0px;
+    width: 100%;
+}
+.text-slider p {
+    text-align: left;
+    color: white;
+    width: 100%;
+}
+.text-slider a {
+    justify-content: flex-start;
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    margin-top: 30px;
+    font-size: 12px;
+}
